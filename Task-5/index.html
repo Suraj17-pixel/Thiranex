@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NEXUS GEAR — Professional Next-Gen Tech & Lifestyle E-Commerce Platform. High-performance modular SPA with client-side routing, instant search, and real-time state management." />
+  <meta name="theme-color" content="#090d16" />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NEXUS GEAR | Next-Gen E-Commerce Catalog" />
+  <meta property="og:description" content="Enterprise-grade modular e-commerce catalog featuring client-side routing, smart filtering, and dynamic cart architecture." />
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230f172a'/><path d='M7 23L16 6L25 23L16 18L7 23Z' fill='%2338bdf8'/><circle cx='16' cy='18' r='3' fill='%23ec4899'/></svg>" />
+  
+  <!-- Google Fonts Preconnect & Async Load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Consolidated Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <title>NEXUS GEAR | Next-Gen E-Commerce Catalog</title>
+</head>
+<body>
+  <!-- Global App Layout -->
+  <div id="app">
+    <!-- Header / Global Navbar Mount -->
+    <header id="site-header"></header>
+
+    <!-- Global Promo Notification Banner -->
+    <div id="promo-banner" class="promo-banner">
+      <div class="promo-content">
+        <span class="badge pulse-badge">CAPSTONE SPECIAL</span>
+        <span>Use code <strong>NEXUS20</strong> at checkout for 20% off all orders! Worldwide Express Shipping on orders over ₹8,000.</span>
+      </div>
+      <button class="promo-close" id="promo-close-btn" aria-label="Close promo banner">&times;</button>
+    </div>
+
+    <!-- Main Dynamic Route Viewport -->
+    <main id="router-view" class="main-content" role="main" tabindex="-1">
+      <!-- Dynamic Views (Catalog, Detail, Cart, Checkout, Wishlist, Analytics, etc.) rendered here -->
+    </main>
+
+    <!-- Global Footer -->
+    <footer id="site-footer"></footer>
+  </div>
+
+  <!-- Slide-Over Cart Drawer -->
+  <div id="cart-drawer-container"></div>
+
+  <!-- Quick View Modal Container -->
+  <div id="quickview-modal-container"></div>
+
+  <!-- Global Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Consolidated Application Core -->
+  <script src="app.js"></script>
+</body>
+</html>
