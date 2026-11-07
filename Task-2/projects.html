@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected web development and product projects by Suraj, showcasing advanced CSS3 layouts, responsive architecture, and interactive UI components.">
+  <meta name="theme-color" content="#f8fafc">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects | Suraj Portfolio">
+  <meta property="og:description" content="A curated selection of responsive web and product projects built with modern frontend architecture.">
+  <title>Projects | Suraj Portfolio</title>
+  <link rel="canonical" href="https://example.com/projects.html">
+  
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Suraj portfolio home">
+        Suraj<span class="brand-dot" aria-hidden="true">.</span>
+      </a>
+
+      <div class="header-actions">
+        <!-- Dynamic Light/Dark Mode Switcher -->
+        <button class="theme-toggle" type="button" aria-label="Switch theme" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Navigation Toggle -->
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <svg class="icon-hamburger" viewBox="0 0 24 24" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container page-main">
+    <header class="page-heading">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Featured <span class="gradient-text">Projects.</span></h1>
+      <p class="measure">A detailed look at concept applications and web platforms built with an emphasis on CSS3 architecture, 2D Grid layouts, and mobile-first responsiveness.</p>
+    </header>
+
+    <!-- 2D Detailed Project Showcase Grid -->
+    <section class="project-list" aria-label="Project showcase list">
+      <!-- Project 01: NEXORA -->
+      <article class="project-detail-card" id="nexora">
+        <div class="project-info">
+          <p class="eyebrow">Social / Community Platform Concept</p>
+          <h2>NEXORA</h2>
+          <p>An interactive frontend concept designed to connect individuals with nearby communities, spontaneous group meetups, and local recreational activities based on shared passions.</p>
+          
+          <ul class="project-features" aria-label="Architectural highlights">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>CSS Grid Layout:</strong> 2D responsive feed and interactive multi-column discovery dashboard.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Flexbox Components:</strong> Micro-alignments for profile cards, event chips, and filtering pills.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Dynamic Theming:</strong> Native CSS variable color tokens for seamless day/night transitions.</span>
+            </li>
+          </ul>
+
+          <ul class="tag-list" aria-label="Technologies used">
+            <li>React 19</li>
+            <li>TypeScript</li>
+            <li>CSS3 Grid</li>
+            <li>Fluid Typography</li>
+            <li>ARIA Landmarks</li>
+          </ul>
+
+          <div class="button-row">
+            <a class="button button-sm" href="contact.html">Discuss Project</a>
+            <a class="button button-secondary button-sm" href="index.html">← Back to Overview</a>
+          </div>
+        </div>
+
+        <div class="project-preview-mockup" aria-hidden="true">
+          <div class="mockup-bar">
+            <div class="mockup-dot"></div>
+            <div class="mockup-dot"></div>
+            <div class="mockup-dot"></div>
+          </div>
+          <div class="mockup-window">
+            <div class="mockup-skeleton">
+              <div class="skeleton-line w-80"></div>
+              <div class="skeleton-line w-60"></div>
+              <div class="skeleton-line w-40"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 02: Green Living Rewards -->
+      <article class="project-detail-card" id="green-living">
+        <div class="project-info">
+          <p class="eyebrow">Sustainability &amp; Gamification Concept</p>
+          <h2>Green Living Rewards</h2>
+          <p>A web application concept encouraging everyday climate-conscious habits through structured daily challenges, eco-points accumulation, and sustainable product redemption catalogs.</p>
+          
+          <ul class="project-features" aria-label="Architectural highlights">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Mobile-First Media Queries:</strong> Tailored viewport breakpoints for seamless phone to tablet usage.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>CSS Grid Catalog:</strong> Fluid auto-fill card grid displaying rewards with zero layout shift.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Micro-interactions:</strong> Smooth CSS hover states, badge transitions, and accessible focus styles.</span>
+            </li>
+          </ul>
+
+          <ul class="tag-list" aria-label="Technologies used">
+            <li>Semantic HTML5</li>
+            <li>CSS Variables</li>
+            <li>Grid &amp; Flexbox</li>
+            <li>Accessible UI</li>
+            <li>Responsive Design</li>
+          </ul>
+
+          <div class="button-row">
+            <a class="button button-sm" href="contact.html">Discuss Project</a>
+            <a class="button button-secondary button-sm" href="index.html">← Back to Overview</a>
+          </div>
+        </div>
+
+        <div class="project-preview-mockup" aria-hidden="true">
+          <div class="mockup-bar">
+            <div class="mockup-dot"></div>
+            <div class="mockup-dot"></div>
+            <div class="mockup-dot"></div>
+          </div>
+          <div class="mockup-window">
+            <div class="mockup-skeleton">
+              <div class="skeleton-line w-60"></div>
+              <div class="skeleton-line w-80"></div>
+              <div class="skeleton-line w-40"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 03: Mentara -->
+      <article class="project-detail-card" id="mentara">
+        <div class="project-info">
+          <p class="eyebrow">Informational Wellness Website</p>
+          <h2>Mentara</h2>
+          <p>An accessible, calming mental wellness resource hub providing evidence-based self-care articles, structured breathing routines, and mindful habit development guides.</p>
+          
+          <ul class="project-features" aria-label="Architectural highlights">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>WCAG 2.1 AA Compliance:</strong> Calibrated contrast ratios in both light and dark mode palettes.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Fluid Typography:</strong> CSS clamp() font scaling preserving readability across all zoom levels.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Reduced Motion Support:</strong> Dedicated @media queries respecting user vestibular preferences.</span>
+            </li>
+          </ul>
+
+          <ul class="tag-list" aria-label="Technologies used">
+            <li>Design Systems</li>
+            <li>A11y Standards</li>
+            <li>CSS Custom Tokens</li>
+            <li>Mobile-First</li>
+            <li>Cross-Browser</li>
+          </ul>
+
+          <div class="button-row">
+            <a class="button button-sm" href="contact.html">Discuss Project</a>
+            <a class="button button-secondary button-sm" href="index.html">← Back to Overview</a>
+          </div>
+        </div>
+
+        <div class="project-preview-mockup" aria-hidden="true">
+          <div class="mockup-bar">
+            <div class="mockup-dot"></div>
+            <div class="mockup-dot"></div>
+            <div class="mockup-dot"></div>
+          </div>
+          <div class="mockup-window">
+            <div class="mockup-skeleton">
+              <div class="skeleton-line w-40"></div>
+              <div class="skeleton-line w-80"></div>
+              <div class="skeleton-line w-60"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-current-year>2026</span> Suraj. Built with semantic HTML &amp; advanced CSS3.</p>
+      <ul class="footer-links" aria-label="Footer navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
